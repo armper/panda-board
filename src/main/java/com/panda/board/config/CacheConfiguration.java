@@ -50,6 +50,11 @@ public class CacheConfiguration {
             createCache(cm, com.panda.board.domain.User.class.getName());
             createCache(cm, com.panda.board.domain.Authority.class.getName());
             createCache(cm, com.panda.board.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.panda.board.domain.OverheardComment.class.getName());
+            createCache(cm, com.panda.board.domain.Post.class.getName());
+            createCache(cm, com.panda.board.domain.Post.class.getName() + ".overheardComments");
+            createCache(cm, com.panda.board.domain.Topic.class.getName());
+            createCache(cm, com.panda.board.domain.Topic.class.getName() + ".posts");
             // jhipster-needle-ehcache-add-entry
         };
     }
